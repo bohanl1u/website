@@ -19,7 +19,14 @@
   /**
    * colors
    */
+  --cool-gray: hsla(254, 20%, 58%, 1);
+  --thistle: hsla(295, 18%, 75%, 1);
+  --amaranth-pink: hsla(341, 54%, 73%, 1);
+  --glaucous: hsla(229, 42%, 64%, 1);
+  --egyptian-blue: hsla(228, 66%, 33%, 1);
 
+
+  
   --cadet-blue-crayola: hsl(240, 10%, 70%);
   --gold-web-golden: hsl(50, 100%, 54%);
   --vivid-sky-blue: hsl(196, 84%, 63%);
@@ -989,6 +996,68 @@ textarea.contact-input {
     background-color: var(--rufous);
   }
 
+  /* Add this CSS code to your existing styles.css file */
+
+/*-----------------------------------*\
+  #EXPERIENCES
+\*-----------------------------------*/
+/* Add this CSS code to your existing styles.css file */
+
+/*-----------------------------------*\
+  #EXPERIENCES
+\*-----------------------------------*/
+
+.experiences {
+  padding-block: calc(var(--section-padding) + 8px); /* Increase padding by 8px */
+  background-color: var(--independence);
+  color: var(--white);
+}
+
+.experiences h2.section-title {
+  font-size: calc(var(--fs-2)); /* Increase font size by 8px */
+  margin-block-end: 60px; /* Add more margin underneath the title */
+}
+
+.experiences-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px; /* Larger gap between cards */
+}
+
+.experience-card {
+  background-color: var(--independence);
+  border-radius: var(--radius-10);
+  padding: 40px; /* Larger padding */
+  box-shadow: var(--shadow);
+  transition: var(--transition-2);
+}
+
+.experience-card:hover {
+  background-color: var(--space-cadet);
+}
+
+.experience-title {
+  font-family: var(--ff-barlow);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+  margin-block-end: 20px;
+}
+
+.experience-details {
+  font-family: var(--ff-open-sans);
+  font-size: var(--fs-5);
+  line-height: 1.6;
+}
+
+/* Responsive layout for the experiences section */
+@media (min-width: 768px) {
+  .experiences-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
 
 
   /**
@@ -1055,4 +1124,5 @@ textarea.contact-input {
   .copyright,
   .footer-list { margin-inline: 0; }
 
+  
 }
