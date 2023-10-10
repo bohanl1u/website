@@ -23,7 +23,7 @@
   --cadet-blue-crayola: hsl(240, 10%, 70%);
   --gold-web-golden: hsl(50, 100%, 54%);
   --vivid-sky-blue: hsl(196, 84%, 63%);
-  --midnight-blue: hsl(231, 83%, 25%);
+  --midnight-blue: hsl(234, 100%, 77%);
   --minion-yellow: hsl(50, 100%, 64%);
   --independence: hsl(225, 24%, 27%);
   --orange-soda: hsl(7, 96%, 61%);
@@ -306,7 +306,7 @@ body {
 .rotate-img { display: none; }
 
 .hero {
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url("../images/sky3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
