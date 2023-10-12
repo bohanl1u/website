@@ -984,24 +984,26 @@ textarea.contact-input {
   #EXPERIENCES
 \*-----------------------------------*/
 /* Add this CSS code to your existing styles.css file */
-
-/*-----------------------------------*\
-  #EXPERIENCES
-\*-----------------------------------*/
-
-/* Add your existing CSS styles here */
-.experiences-title {
-  min-height: 20vh;
-  padding: 10rem;
-}
-
 .experiences {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   gap: 20px;
+  height: 100vh;
+  padding: 20px;
   background-color: var(--thistle);
-  min-height: 100vh;
+}
+
+.experience-title {
+  padding: 2%;
+}
+
+h2 {
+  font-family: var(--ff-barlow);
+  font-size: var(--fs-2);
+  color: var(--white);
+
 }
 
 .experience-card {
@@ -1010,11 +1012,11 @@ textarea.contact-input {
   justify-content: space-between;
   width: 80%;
   padding: 20px;
-  /* background-color: var(--independence); */
-  /* border-radius: var(--radius-10);
+  background-color: var(--independence);
+  border-radius: var(--radius-10);
   box-shadow: var(--shadow);
   font-family: var(--ff-barlow);
-  color: var(--white); */
+  color: var(--white);
 }
 
 .title {
@@ -1028,7 +1030,6 @@ textarea.contact-input {
 .number {
   font-size: var(--fs-2);
 }
-
 
 
 
