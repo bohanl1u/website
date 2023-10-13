@@ -27,6 +27,19 @@
   --egyptian-blue: hsla(228, 66%, 33%, 1);
 
 
+  --olive: #72722Bff;
+  --light-coral: #F0807Bff;
+  --carolina-blue: #72B0C8ff;
+  --ecru: #C7A879ff;
+  --timberwolf: #DFDCD4ff;
+
+
+
+
+  --linkedin-blue: rgb(0, 119, 181);
+  --instagram: rgb(193 53 132);
+
+
   
   --cadet-blue-crayola: hsl(240, 10%, 70%);
   --gold-web-golden: hsl(50, 100%, 54%);
@@ -192,7 +205,7 @@ html {
 }
 
 body {
-  background-color: var(--cool-gray);
+  background-color: var(--ecru);
   color: var(--cadet-blue-crayola);
   font-size: 1.6rem;
   line-height: 1.6;
@@ -230,7 +243,7 @@ body {
   transition: var(--transition-2);
 }
 
-.btn-primary.blue { background-color: var(--egyptian-blue); }
+.btn-primary.blue { background-color: var(--carolina-blue); }
 
 .btn-primary.blue:is(:hover, :focus) { background-color: var(--glaucous); }
 
@@ -243,7 +256,7 @@ body {
 .section { padding-block: var(--section-padding); }
 
 .section-subtitle {
-  color: var(--orange-soda);
+  color: white;
   font-family: var(--ff-barlow);
   font-size: var(--fs-4);
   text-align: center;
@@ -276,7 +289,7 @@ body {
   position: fixed;
   padding-block: 15px;
   width: 100%;
-  background-color: var(--cool-gray);
+  background-color: var(--light-coral);
   height: 65px;
   box-shadow: var(--shadow);
   overflow: hidden;
@@ -351,7 +364,7 @@ body {
 .rotate-img { display: none; }
 
 .hero {
-  background-image: url("../images/sky3.jpg");
+  background-image: url("../images/new1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -415,7 +428,7 @@ body {
 .about { padding-block-start: 120px; }
 
 .about-banner {
-  background-color: var(--independence);
+  background-color: var(--ecru);
   border-radius: var(--radius-10);
   margin-block-end: 30px;
 }
@@ -426,6 +439,9 @@ body {
 
 .about :is(.section-title, .section-text) { margin-block-end: 30px; }
 
+.about-content .section-text {
+  color: white;
+}
 
 
 
@@ -433,6 +449,9 @@ body {
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
+.portfolio {
+  background-color: var(--timberwolf);
+}
 
 .portfolio .section-title { margin-block-end: 18px; }
 
@@ -444,22 +463,30 @@ body {
 }
 
 .portfolio-card {
-  background-color: var(--amaranth-pink);
+  background-color: var(--white);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 120px 20px;
   border-radius: var(--radius-20);
   font-family: var(--ff-barlow);
-  color: var(--white);
+  color: var(--timberwolf);
   font-weight: var(--fw-600);
   transition: var(--transition-2);
 }
 
 .portfolio-list > li:nth-child(even) .card-content { margin-inline-start: auto; }
 
+.portfolio .section-subtitle {
+  color: var(--light-coral);
+}
+
+.portfolio .section-title {
+  color: var(--light-coral);
+}
+
 .portfolio-card .card-subtitle {
-  color: var(--orange-soda);
+  /* color: var(--black); */
   margin-block-end: 5px;
 }
 
@@ -477,7 +504,7 @@ body {
 }
 
 .portfolio-card .btn-link ion-icon {
-  color: var(--orange-soda);
+  color: var(--black);
   font-size: 1.6rem;
 }
 
@@ -534,15 +561,17 @@ body {
 /*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/
-
+.contact {
+  background-color: var(--carolina-blue);
+}
 .contact-card {
-  background-color: var(--midnight-blue);
+  background-color: var(--timberwolf);
   padding: 50px 25px;
   border-radius: var(--radius-20);
 }
 
 .contact-card .card-subtitle {
-  color: var(--orange-soda);
+  color: var(--carolina-blue);
   font-family: var(--ff-barlow);
   font-size: var(--fs-4);
   font-weight: var(--fw-600);
@@ -598,29 +627,36 @@ textarea.contact-input {
 .contact-item:not(:last-child) { margin-block-end: 20px; }
 
 .contact-icon {
-  background-color: var(--glaucous);
+  background-color: var(--carolina-blue);
+}
+
+
+.contact-icon {
   font-size: 2.4rem;
   padding: 20px;
   border-radius: 50%;
 }
 
+
 .contact-item-title {
-  color: var(--white);
+  color: var(--carolina-blue);
   font-family: var(--ff-barlow);
   font-size: var(--fs-4);
   font-weight: var(--fw-600);
 }
-
+.contact-item-link {
+  color: white;
+}
 .contact-item-link { transition: var(--transition-1); }
 
-.contact-item-link:not(address):is(:hover, :focus) { color: var(--white); }
+.contact-item-link:not(address):is(:hover, :focus) { color: var(--ecru); }
 
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
 
 .footer {
-  background-color: var(--thistle);
+  background-color: var(--light-coral);
   padding-block: 60px;
 }
 
@@ -724,6 +760,11 @@ textarea.contact-input {
    * PORTFOLIO
    */
 
+  .portfolio .section-title{
+    padding: 5%;
+
+  }
+
   .portfolio-card {
     background-size: 115%;
     padding-inline: 80px;
@@ -805,7 +846,7 @@ textarea.contact-input {
   }
 
   .header.active {
-    background-color: var(--thistle);
+    background-color: var(--light-coral);
     box-shadow: var(--shadow);
     padding-block: 20px;
   }
@@ -927,7 +968,10 @@ textarea.contact-input {
    * ABOUT
    */
 
-  .about { padding-block: 180px; }
+  .about { 
+    padding-block: 180px; 
+    min-height: 100vh;
+  }
 
   .about .container {
     display: grid;
@@ -965,19 +1009,19 @@ textarea.contact-input {
   .abs-icon-1 {
     top: 50px;
     left: -120px;
-    background-color: var(--bluetiful);
+    background-color: var(--black);
   }
 
   .abs-icon-2 {
     top: -40px;
     right: -40px;
-    background-color: var(--gold-web-golden);
+    background-color: var(--instagram);
   }
 
   .abs-icon-3 {
     bottom: -40px;
     left: 250px;
-    background-color: var(--rufous);
+    background-color: var(--linkedin-blue);
   }
 
   /* Add this CSS code to your existing styles.css file */
@@ -1004,13 +1048,13 @@ textarea.contact-input {
   align-items: center;
   gap: 20px;
   padding: var(--section-padding); /* Increase padding to add space on left and right */
-  background-color: var(--thistle);
+  background-color: var(--light-coral);
   min-height: 100vh;
 }
 
 .experience-title {
   text-align: center;
-  color: var(--orange-soda);
+  color: var(--white);
   font-family: var(--ff-barlow);
   font-size: var(--fs-4);
   font-weight: var(--fw-600);
@@ -1022,13 +1066,13 @@ textarea.contact-input {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1000px; /* Adjust the max-width as needed */
+  max-width: 1250px; /* Adjust the max-width as needed */
   padding: 20px;
-  background-color: var(--independence);
+  background-color: var(--timberwolf);
   border-radius: var(--radius-10);
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
   font-family: var(--ff-barlow);
-  color: var(--white);
+  color: var(--light-coral);
   margin-block-start: 20px; /* Add margin between experience cards */
 }
 
@@ -1039,47 +1083,13 @@ textarea.contact-input {
 
 .experience-card .content {
   flex-grow: 1; /* Allow content to expand and fill the space */
-  text-align: left; /* Align content to the left */
+  text-align: center; /* Center content */
   padding: 1%;
+  margin-right: 5%;
 }
 
 .experience-card .number {
   font-size: var(--fs-4); /* Adjust font size as needed */
-}
-
-/* Add responsive styles for screens up to 768px */
-@media (max-width: 768px) {
-  .experiences {
-    padding: var(--section-padding-mobile); /* Adjust the padding for mobile */
-  }
-
-  .experience-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; /* Center text content horizontally */
-    padding: 20px;
-    background-color: var(--independence);
-    border-radius: var(--radius-10);
-    box-shadow: var(--shadow);
-    font-family: var(--ff-barlow);
-    color: var(--white);
-    margin-block-start: 20px; /* Add margin between experience cards */
-  }
-
-  .experience-card .title {
-    font-size: var(--fs-2); /* Adjust font size as needed */
-    margin-inline-end: 0; /* Remove extra spacing between title and content */
-  }
-
-  .experience-card .content {
-    text-align: center; /* Center text content horizontally */
-  }
-
-  .experience-card .number {
-    font-size: var(--fs-2); /* Adjust font size as needed */
-  }
-
 }
 
 
