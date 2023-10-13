@@ -488,7 +488,7 @@ body {
 /*-----------------------------------*\
   #SKILLS
 \*-----------------------------------*/
-
+/* 
 .skills .section-title { margin-block-end: 20px; }
 
 .skills .section-text { margin-block-end: 70px; }
@@ -523,7 +523,9 @@ body {
   background-color: var(--orange-soda);
   height: 100%;
   border-radius: inherit;
-}
+} */
+
+
 
 
 
@@ -984,54 +986,101 @@ textarea.contact-input {
   #EXPERIENCES
 \*-----------------------------------*/
 /* Add this CSS code to your existing styles.css file */
+/* Original styles */
+/* Add your original styles here */
+
+/* Experiences section styles */
+/* Original styles */
+/* Add your original styles here */
+
+/* Experiences section styles */
+/* Original styles */
+/* Add your original styles here */
+
+/* Experiences section styles */
 .experiences {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   gap: 20px;
-  height: 100vh;
-  padding: 20px;
+  padding: var(--section-padding); /* Increase padding to add space on left and right */
   background-color: var(--thistle);
+  min-height: 100vh;
 }
 
 .experience-title {
-  padding: 2%;
-}
-
-h2 {
+  text-align: center;
+  color: var(--orange-soda);
   font-family: var(--ff-barlow);
-  font-size: var(--fs-2);
-  color: var(--white);
-
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+  padding-bottom: 5%;
 }
 
 .experience-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
+  max-width: 1000px; /* Adjust the max-width as needed */
   padding: 20px;
   background-color: var(--independence);
   border-radius: var(--radius-10);
   box-shadow: var(--shadow);
   font-family: var(--ff-barlow);
   color: var(--white);
+  margin-block-start: 20px; /* Add margin between experience cards */
 }
 
-.title {
-  font-size: var(--fs-2);
+.experience-card .title {
+  font-size: var(--fs-4); /* Adjust font size as needed */
+  margin-inline-end: 50px; /* Add spacing between title and content */
 }
 
-.content {
-  text-align: center;
+.experience-card .content {
+  flex-grow: 1; /* Allow content to expand and fill the space */
+  text-align: left; /* Align content to the left */
+  padding: 1%;
 }
 
-.number {
-  font-size: var(--fs-2);
+.experience-card .number {
+  font-size: var(--fs-4); /* Adjust font size as needed */
 }
 
+/* Add responsive styles for screens up to 768px */
+@media (max-width: 768px) {
+  .experiences {
+    padding: var(--section-padding-mobile); /* Adjust the padding for mobile */
+  }
 
+  .experience-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text content horizontally */
+    padding: 20px;
+    background-color: var(--independence);
+    border-radius: var(--radius-10);
+    box-shadow: var(--shadow);
+    font-family: var(--ff-barlow);
+    color: var(--white);
+    margin-block-start: 20px; /* Add margin between experience cards */
+  }
+
+  .experience-card .title {
+    font-size: var(--fs-2); /* Adjust font size as needed */
+    margin-inline-end: 0; /* Remove extra spacing between title and content */
+  }
+
+  .experience-card .content {
+    text-align: center; /* Center text content horizontally */
+  }
+
+  .experience-card .number {
+    font-size: var(--fs-2); /* Adjust font size as needed */
+  }
+
+}
 
 
 
